@@ -34,7 +34,14 @@
     }).addTo(map);
 
     var pulsingIcon = L.icon.pulse({iconSize:[14,14],color:'red'});
-    var marker = L.marker([50.0874,14.4212],{icon: pulsingIcon,title: 'This is pulsing icon'}).addTo(map);
+    L.marker([50.0874,14.4212],{icon: pulsingIcon,title: 'This is pulsing icon'}).addTo(map);
+
+    var pulsingIcon2 = L.icon.pulse({iconSize:[8,8],color:'blue'});
+    L.marker([50.0874,14.4254],{icon: pulsingIcon2,title: 'This is pulsing icon'}).addTo(map);
+
+    var pulsingIcon3 = L.icon.pulse({iconSize:[12,12],color:'green'});
+    L.marker([50.0874,14.4162],{icon: pulsingIcon3,title: 'This is pulsing icon'}).addTo(map);
+
 
 </script>
 </body>
