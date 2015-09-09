@@ -1,0 +1,202 @@
+html,*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans";
+    font-size: 1.1em;
+}
+
+header{
+   background: #444444;
+    height: 60px;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    border-bottom: 1px solid #282828;
+    z-index:101;
+    position: relative;
+
+}
+
+header .logo-svg{
+    max-height: 35px;
+    margin-top: 10px;
+}
+
+nav{
+    float: right;
+    display: none;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+
+.first{
+    background-color: #F9F9F9;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    position: relative;
+    z-index:100;
+}
+
+.first .content{
+    text-align: center;
+    padding-top: 30px;
+}
+#master-wrapper{
+    display: inline-block;
+    max-width: 350px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#master{
+    font-size: 1.8em;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #5b5b5b;
+    //font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+@media all and (max-width: 1000px) {
+    #master{
+        text-align: center;
+    }
+}
+
+#obr{
+    max-width: 625px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#obr img{
+    width: 100%;
+}
+
+.second {
+    color: #202020;
+    background-color: #b2acab;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    z-index: 95;
+    position: relative;
+}
+
+.second .content{
+}
+
+.second .heading{
+    margin: 0 0 20px 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    color: white;
+    background-color: #8A8ACB;
+
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 98;
+}
+
+#cards-wrapper{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card{
+    display: inline-block;
+    max-width: 256px;
+    min-width: 256px;
+    font-size: 0.8em;
+    text-align: left;
+    min-height:200px;
+    margin: 6px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-radius: 2px;
+    vertical-align: top;
+
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+}
+
+.card-heading{
+    color: #727272;
+}
+
+.card-content{
+    color: #444444;
+
+}
+
+.third {
+    color: whitesmoke;
+    background-color: #8a72b2;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    z-index: 90;
+    position: relative;
+
+}
+
+.third .content{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.left{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 600px;
+}
+
+.right{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+}
+
+footer{
+    height: 60px;
+    background-color: #282828;
+
+}
+
+footer .content{
+    color: #939393;
+    font-size: 0.9em;
+}
+
+#copyright{
+    display: inline-block;
+}
+
+#logo{
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+#logo img{
+   width: 200px;
+}
+
+
+
+
