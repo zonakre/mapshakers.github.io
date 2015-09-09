@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="description" content="customisable icons for LeafletJS">
+    <meta name="keywords" content="icons, symbol, font, map, design, cartography, web development, css">
+    <meta name="author" content="Filip Zavadil">
+    <title>MapkeyIcons for Leaflet</title>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mapshakers/leaflet-mapkey-icon/master/dist/MapkeyIcons.css" />
+    <script src="https://cdn.rawgit.com/mapshakers/leaflet-mapkey-icon/master/dist/L.Icon.Mapkey.js"></script>
+    <style>
+        html, * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            display: block;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #map {
+            position:fixed;
+            top:0;
+            bottom:0;
+            width:100%;
+            height: 100%;
+            overflow: hidden;
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+        }
+
+        .leaflet-container {
+            background-color: rgba(100, 117, 145, 1)!important;
+        }
+
+    </style>
+</head>
+<body>
+<a href="https://github.com/mapshakers/leaflet-mapkey-icon"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:100" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<div id="map"></div>
+</body>
+<script>
+
+    // VIEW
+    var latlng_center = L.latLng(50.149, 15.095);
+    var zoom = 6;
+
+    // MAP
+    map = L.map('map',{
+                attributionControl: false
+            }
+    ).setView(latlng_center, zoom);
+
+    L.marker([50,20],{draggable:true, icon:L.icon.mapkey() }).addTo(map);
+    L.marker([50,10],{draggable:true,icon:L.icon.mapkey({icon:"school",color:'#725139',background:'#f2c357',size:45}) }).addTo(map);
+    L.marker([51.5,15],{draggable:true,icon:L.icon.mapkey({icon:"mountain",background:"#649664"}) }).addTo(map);
+    L.marker([50,17.5],{draggable:true,icon:L.icon.mapkey({icon:"burger",size:40,background:"#6d3c3c",hoverEffect:false}) }).addTo(map);
+    L.marker([50,12.5],{draggable:true,icon:L.icon.mapkey({icon:"hotel_alt",size:40,background:"#f7f1c1",color:"#464646"}) }).addTo(map);
+    L.marker([51,12.5],{draggable:true,icon:L.icon.mapkey({icon:"bag",size:35,background:"#a6a6d8",color:"#383838",borderRadius: 4}) }).addTo(map);
+    L.marker([51,17.5],{draggable:true,icon:L.icon.mapkey({icon:"nature",size:50,background:"#725139",color:"#adca86",borderRadius: 20}) }).addTo(map);
+    L.marker([49,12.5],{draggable:true,icon:L.icon.mapkey({icon:"theatre",size:40,background:"#9dcce0",color:"#383838",additionalCSS:"border:3px solid #4f849b;"}) }).addTo(map);
+    L.marker([49,17.5],{draggable:true,icon:L.icon.mapkey({icon:"bar",size:50,background:"#fcfcf9",color:"#383838",additionalCSS:"border:4px solid #aa3838;"}) }).addTo(map);
+    L.marker([48.5,15],{draggable:true,icon:L.icon.mapkey({icon:"pub",size:46,background:"#f7d588",color:"#7c5436",borderRadius: 16}) }).addTo(map);
+    L.marker([51.5,10],{draggable:true,icon:L.icon.mapkey({icon:"volcano",size:46,background:"#99defc",color:"#992b00",hoverCSS:'background-color:#992b00!important;color:#99defc!important;'}) }).addTo(map);
+    L.marker([51.5,20],{draggable:true,icon:L.icon.mapkey({icon:"waterwork",size:46,background:"#2CACE5",color:"#153754",borderRadius:0.1}) }).addTo(map);
+    L.marker([48,12.5],{draggable:true,icon:L.icon.mapkey({icon:"tree_leaf",size:45,background:false,color:'#487f48',additionalCSS:"text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);"}) }).addTo(map);
+    L.marker([48,17.5],{draggable:true,icon:L.icon.mapkey({htmlCode:'&#xe054;&#57426;',size:42,background:false,color:'#dd8282',additionalCSS:"text-shadow:-1px -1px 4px #000, 1px -1px 4px #000, -1px 1px 4px #000, 1px 1px 4px #000;"}) }).addTo(map);
+    L.marker([52.1,14.5],{draggable:true,icon:L.icon.mapkey({htmlCode:'&#57388;winery',size:25,background:false,color:'#6834b2',additionalCSS:"text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);"}) }).addTo(map);
+    L.marker([47.25,15],{draggable:true,icon:L.icon.mapkey({icon:'fountain',size:50,background:'#adca86',color:'#c2e9f9',borderRadius:25,additionalCSS:"text-shadow: 0px 0px 6px rgba(75, 89, 127, 1);"}) }).addTo(map);
+    L.marker([52.25,12.5],{draggable:true,icon:L.icon.mapkey({icon:'flag',size:58,background:'#e5cd95',color:'#c15959',borderRadius:25,additionalCSS:"text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.8);"}) }).addTo(map);
+    L.marker([52.25,17.5],{draggable:true,icon:L.icon.mapkey({icon:'drop',size:45,background:'#195e7c',color:'#91c2d6',additionalCSS:"text-shadow:-1px -1px 4px #000, 1px -1px 4px #000, -1px 1px 4px #000, 1px 1px 4px #000;"}) }).addTo(map);
+    L.marker([53,15],{draggable:true,icon:L.icon.mapkey({icon:'heart',size:45,background:'#725139',color:'#912222',boxShadow: false,additionalCSS:"text-shadow:-1px -1px 4px #FFF, 1px -1px 4px #FFF, -1px 1px 4px #FFF, 1px 1px 4px #FFF;"}) }).addTo(map);
+
+    var mki_1 = {icon:"mapkey",size:80,background:"#464646",color:"#2CACE5",borderRadius: 40};
+    L.marker([50,15],{draggable:true,icon:L.icon.mapkey(mki_1) }).addTo(map).bindPopup(JSON.stringify(mki_1));
+</script>
+</html>
