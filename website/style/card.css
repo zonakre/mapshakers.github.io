@@ -1,0 +1,114 @@
+.dataItem{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin : 10px;
+ // height: 250px;
+    width: 260px;
+    border: none;
+    font-size: 24px;
+    background-color: #606060;
+    color: #323232;
+    border-radius: 2px;
+    text-align: center  ;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.5);
+    padding: 1px;
+}
+
+
+.dataItem .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27px;
+    height: 27px;
+    border-bottom-left-radius: 4px;
+    font: 14px/12px Tahoma, Verdana, sans-serif;
+    cursor: pointer;
+    z-index:30;
+
+    background-color: rgba(0, 0, 0, 0.40);
+    transition-property: background;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+
+    color: #e4e4e4;
+    font-size: 22pt;
+    text-align: center;
+    line-height: 0.9em;
+}
+
+.dataItem .close:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+.dataItem img{
+    position: relative;
+    object-fit: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width:100%;
+    height: 120px;
+}
+
+.dataItem .heading{
+    text-align: left;
+    position: absolute;
+    bottom:10px;
+
+    font-size: 0.6em;
+
+    color: whitesmoke;
+    background-color: rgba(49, 49, 49, 0.9);
+    padding: 4px;
+
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.heading h1{
+    padding: 0 0 2px 0;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+
+.dataItem table{
+    margin-top: -5px;
+    box-sizing: border-box;
+    border: none;
+    color:#313131;
+    font-size: 0.6em;
+    width: 100%;
+    background-color: #c6c6c6;
+}
+
+.dataItem td, th{
+   text-align: left;
+    width: 40%;
+    padding: 4px;
+    color: #313131;
+    background-color: #c6c6c6;
+
+}
+
+.dataItem a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    //margin: 8px 4px 4px 4px;
+    color: whitesmoke;
+    background-color: #51666a;
+  //  border: 1px solid #739298;
+    //border-radius: 4px;
+    font-size: 0.6em;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.5s ease;
+}
+
+.dataItem a:focus, .dataItem a:hover{
+    background-color: #f45d59;
+}

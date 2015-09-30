@@ -6,7 +6,7 @@
     <meta name="description" content="We are visualisating data on map.">
     <meta name="keywords" content="map, design, GIS,data analytics, cartography,web development">
     <meta name="author" content="Filip Zavadil">
-    <title>mapshakers</title>
+    <title>mapshakers | next level of cartography</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="website/style/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="website/style/favicon/apple-touch-icon-60x60.png">
@@ -29,52 +29,293 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="http://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet" type="text/css">
+    <link href='https://rawgit.com/mapshakers/mapkeyicons/master/dist/MapkeyIcons.css' rel='stylesheet' type='text/css'>
+
     <script src="website/js/jquery-2.1.4.min.js"></script>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Noto Sans" ,sans-serif;
-            font-size: 1.1em;
-            color: #cccccc;
-            background-color: #313131;
-
-
-        }
-
-        #wrapper{
-            height: 100%;
-            width: 100%;
-        }
-
-        #desc{
-
-            margin: 40px;
-            font-size: 2em;
-            text-align: center;
-        }
-
-        img {
-            width: 100%;
-            max-width: 1000px;
-        }
-        
-        p{
-            display: block;
-        }
-    </style>
+    <link href="website/style/main.css" rel="stylesheet" type="text/css">
+    <link href="website/style/mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<section id="wrapper">
-    <div id="desc">
-        <img src="graphics/logo/logo_color_bright.svg"/>
-        <div style="font-size: 0.6em"> comming soon ...</div>
-        <img src="website/img/articles/master.png"/>
-        <p> ( the next generation of cartography ) </p>
+
+<header>
+    <div class="cc">
+        <div id="header">
+            <div id="logoWrapper">
+                <a href="http://www.mapshakers.com"><img src="website/img/logo/mapshakers_header_logo.png"></a>
+            </div>
+            <div id="navWrapper">
+                <button id="menuButton"><span class="mki mki-bars"></span></button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span class="mki-intext mki-home"></span> home</a></li>
+                        <li><a href="#contact"><span class="mki-intext mki-post_office"></span> contact</a></li>
+                        <li><a href="website/download.html"><span class="mki-intext mki-data"></span> data</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id ="carousel">
+            <div id="carouselContent"/>
+        </div>
+
+        <div id="carouselNav"/>
+    </div>
+</header>
+
+<section id="s1">
+    <div class="cc">
+        <div id="servicesWrapper">
+            <div class="one-third"><span class="mki mki-database" style="font-size: 150px"></span><br/>Cloud secure spatial database allow the fastest data retrieval and analysis. Let your data be with with you anywhere. </div><div class="one-third"><span class="mki mki-map" style="font-size: 150px"></span><br/>Visualise your data on our basemap and you have effective overview. Choose from plenty map styles right for your purpose.</div><div class="one-third"><span class="mki mki-analyse" style="font-size: 150px"></span><br/>Find and analyse your data on-the fly. Do you prefer table view or chart view? Use our clear vusialisations to improve your work.</div>
+        </div>
+    </div>
+</section>
+
+<section id="sWebApp">
+    <div class="cc">
+        <h1>web map applications</h1>
+        <div class="one-half" style="width:50%">
+            <ul>
+                <li>collecting spatial data?</li>
+                <li>need data always be with you? </li>
+                <li>want a current overview anytime? </li>
+                <li>like on-the-fly data analysis? </li>
+                <li>need very fast application? </li>
+                <li>want clear responsive design? </li>
+                <li>expecting high level security? </li>
+            </ul>
+        </div><div class="one-half" style="width:50%;margin-top: 50px"><img class="shadowed" style="max-width: 100%;width: 90%" src="website/img/gisapp.png" ></div>
+        <p>That's why are here! We are creating web map applications exactly for you!</p>
+    </div>
+    <div class="cc">
+        <div style="text-align: center;">
+            <img class="shadowed" style="max-width: 100%;width: 90%" src="website/img/SA_webapp.png" >
+        </div>
+
+        <div class="one-half" style="width:40%;text-align: center"><img width="50%" class="shadowed" src="website/img/tablet.png"></div><div class="one-half" style="width:60%">
+        <h3>fast applications</h3>
+        <p>
+            for our web maps we are using the high-end technologies
+        </p>
+    </div>
+
+        <div class="one-half" style="width:50%">
+            <h3>responsive design</h3>
+            <p>
+                our web maps are awesome on every device, take us on desktop browser, laptop, iPad, tablet or smartphone
+            </p>
+        </div><div class="one-half" style="width:50%;text-align: center"><img width="90%" class="shadowed" src="website/img/desktop.png"></div>
+        
+
+
+        <div class="one-half" style="width:40%;text-align: center"><img width="30%" class="shadowed" src="website/img/smartphone.png"></div><div class="one-half" style="width:60%">
+        <h3>cloud services</h3>
+        <p>
+            we store your data on our cloud, you have your data anywhere on any device and of course all safely
+        </p>
+    </div>
+    </div>
+</section>
+
+<section id="sStyles">
+    <div class="cc" style="text-align: center">
+        <h1>BASEMAPS</h1>
+        <p>We offer several basemap style. Each is suitable for another purpose. For example if you are interested in road network, you should choose style with significant roads. And if you are tourist you should choose basemap with hillshading and contours.</p>
+        <p>Our basemaps are retina ready so you can enjoy high resolution maps and plans. And of course our basemap is also suitable for print media.</p>
+
+        <div id="mapStyles">
+            <div class="mapStyleItem greyBright shadowed"></div>
+            <div class="mapStyleItem default shadowed"></div>
+            <div class="mapStyleItem relief shadowed"></div>
+            <div class="mapStyleItem night shadowed"></div>
+            <div class="mapStyleItem retro shadowed"></div>
+            <div class="mapStyleItem tourism shadowed"></div>
+            <div class="mapStyleItem greyDark shadowed"></div>
+            <div class="mapStyleItem greyBrightII shadowed"></div>
+        </div>
+
+        <h3> MAP STYLER </h3>
+        <p>You do not choose from a predefined styles? Don't worry. For our clients we provide simple map styler, where is too easy to create map exactly to your liking!</p>
+        <img width="80%" class="shadowed" src="website/img/mapStyler.png" style="border-radius: 2px">
+    </div>
+
+</section>
+
+<section id="s2">
+    <div class="cc">
+        <div style="text-align: center">
+            <img width="80%" src="website/img/mapkeyIcons.png" style="border-radius: 40px">
+        </div>
+        <div class="one-half" style="width:60%">
+            <h1>Modern map symbols</h1>
+            <p>Looking for modern retina map symbols? Are you web developer or cartographer? We are creating mapkeyicons for you! Visit <a href="http://www.mapkeyicons.com"> mapkeyicons.com </a>, download mapkeyicons package and use<strong> CSS toolkit</strong> for simply usage or download <strong>svg or png</strong> images. Everything <strong>for free</strong>! Mapkeyincons are distributed under public domain.</p>
+            <a class="anchorButton" target="_blank" href="https://github.com/mapshakers/mapkeyicons/releases/latest"><span class="mki-intext mki-download"></span> download </a>
+        </div><div class="one-half" style="width:40%">
+        <img style="width: 100%; max-width: 340px" src="website/img/MapkeyIconsPromo.png">
+    </div>
+        <div style="">
+            <h2> Cartographical use </h2>
+            <p>Mapkeyicons - symbols/pictograms/icons with clear relevance - are perfect for your map project. If you are creating web map applications based on excellent javascript library Leaflet, you might be interested in our plugin <a href="https://github.com/mapshakers/mapkeyicons"> leaflet-mapkey-icon</a>!</p>
+            <div style="text-align: center"> <img width="90%" src="website/img/mapkeyicons_praha.jpg" style="border-radius: 40px"></div>
+            <h2> GIS editors </h2>
+            <p><strong>Stay tuned!</strong> We are preparing symbol set, that you can use in your favourite map editor! We will soon provide symbol set for <i>ArcMap</i> and <i>QGIS</i>. </p>
+        </div>
 
     </div>
 </section>
+
+<section id="sOpenSource">
+    <div class="cc">
+        <div class="one-half" style="width:40%;text-align:center;color:#555e72;"><span class="mki mki-github bigSymbol" style="font-size:280px"></span></div><div class="one-half"  style="width: 60%">
+        <p>We are creating and contributing to open-source projects. Check out our <strong>github profile</strong>. We are also contributors to awesome global mapping project <strong>OpenStreetMap</strong>!</p>
+        <div><a class="anchorButton" target="_blank" href="https://github.com/mapshakers"> go to github profile </a></div>
+    </div>
+    </div>
+</section>
+
+<section id="s3">
+    <div class="cc">
+        <div style="text-align: center"></div>
+        <div class="one-half" style="width:25%;text-align:center;color:#525252"><span class="mki mki-cartography bigSymbol" style="font-size:240px;"></span></div><div class="one-half"  style="width: 75%;text-align:left">
+        <h1>Cartographic/GIS data</h1>
+        <p>We are providing plenty GIS data for <strong>free</strong>! There are mainly based on OpenStreetMap database. In download section you can choose from vector data or raster dataset.</p>
+    </div>
+        <div class="one-half" style="width:35%;text-align:left">
+            <h3>Free GeoTiff maps</h3>
+            <p>We offer rendered geotiff maps and city plans in varying scales and places! Download it and use it for free! Maps are rendered in web mercator (<code style="font-size: 1.2em">epsg:3857</code>) projection in <code>geotiff</code> format with georeferencing. Ready to be used in your GIS application as basemap.</p>
+        </div><div class="one-half"  style="width: 65%">
+        <img width="100%" src="website/img/the_world_greyDark.png" style=""/>
+    </div>  </div>
+        <div style="text-align: center">
+            <div class="mapsItem barcelona"></div>
+            <div class="mapsItem europe"></div>
+            <div class="mapsItem lisboa"></div>
+            <div class="mapsItem world_2"></div>
+            <div class="mapsItem amsterdam"></div>
+            <div class="mapsItem south_america"></div>
+            <div class="mapsItem london"></div>
+            <div class="mapsItem cairo"></div>
+            <div class="mapsItem sicily"></div>
+            <div class="mapsItem tatras"></div>
+            <div class="mapsItem world"></div>
+            <div class="mapsItem berlin"></div>
+            <div class="mapsItem salzburk"></div>
+            <div class="mapsItem prague"></div>
+            <div class="mapsItem south_europe"></div>
+            <div class="mapsItem stockholm"></div>
+            <div class="mapsItem great_britain"></div>
+            <div class="mapsItem singapore"></div>
+            <div class="mapsItem chicago"></div>
+            <div class="mapsItem vesuv"></div>
+        </div>
+
+</section>
+
+<section id="s4">
+    <div class="cc">
+        <div id="consulting" class="one-half"  style="width: 60%">
+            <h1>GIS consulting</h1>
+            <p>Need help with your GIS project? Don't hesitate to contact us! We are GIS guys with years of experience! We can share knowledge about <strong>GIS servers</strong>, <strong>spatial databases</strong>, <strong>designing maps</strong>, <strong>creating webmaps</strong> and <strong>GIS analysis</strong>.  </p>
+        </div><div class="one-half" style="width:40%;text-align:center;color: #a4a4a4;"><span class="mki mki-university bigSymbol" style="font-size:300px"></span></div>
+    </div>
+</section>
+
+
+<section id="s5">
+    <div  class="cc">
+        <div  id="about" class="one-half" style="width: 60%"> <h1>about</h1> <p>We are group of map enthusiasts, who are improving usability of map applications. Our work is our passion. And we are </p>
+        </div><div id="contact" class="one-half" style="width: 40%">
+        <h1>contact</h1>
+        <ul>
+            <li><a href="#"><span class="mki-intext mki-telephone"></span><span class="value">+420 739 636 988</span></a></li>
+            <li><a href="#"><span class="mki-intext mki-post_office"></span><span class="value">&#105;&#110;&#102;&#111;&#064;&#109;&#097;&#112;&#115;&#104;&#097;&#107;&#101;&#114;&#115;&#046;&#099;&#111;&#109;</span></a></li>
+            <li><a href="#"><span class="mki-intext mki-marker"></span><span class="value">Prague 4, Czech Rep.</span></a></li>
+            <li><a href="#"><span class="mki-intext mki-github"></span><span class="value">github/mapshakers</span></a></li>
+            <li><a href="#"><span class="mki-intext mki-laptop"></span><span class="value">www.mapshakers.com</span></a></li>
+        </ul>
+
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section id="sLast">
+    <div class="cc" style="text-align: center">
+        <img style="width: 700px;max-width: 100%;padding-top: 20px" src="website/img/reference.png">
+    </div>
+</section>
+
+<footer>
+    <div class="cc" style="text-align: center;padding-top:30px">
+        <div id="copyright"> &copy; mapshakers, 2015  All rights reserved</div>
+    </div>
+</footer>
+
+
+<!-- CAROUSEL -->
+<div id="gis" style="display: none">
+    <div class="carouselText">
+        YOUR<br/>DATA<br/>EVERYWHERE<br/>WITH YOU
+    </div><div class="carouselImage">
+    <img style="max-width:100%;" src="website/carousel/webGIScloud.png">
+</div>
+</div>
+
+<div id="app" style="display: none">
+    <div class="carouselText">
+        WITH AN<br/>
+        EMPHASIS ON<br/>
+        SIMPLICITY,<br/>
+        USABILITY,<br/>
+        SECURITY!<br/>
+
+    </div><div class="carouselImage">
+    <img style="max-width:100%;width: 100%" src="website/carousel/webapp/webapp.png">
+</div>
+</div>
+
+<div id="mapkeyicons" style="display: none">
+    <div class="carouselText">
+        MAPKEYICONS<br/>
+        MAP SYMBOLS<br/>
+        FOR CARTOGRAPHERS<br/>
+
+    </div><div class="carouselImage">
+    <img style="max-width:100%;width: 100%" src="website/carousel/mapkeyicons.png">
+</div>
+</div>
+
+
+<div id="styles" style="display: none">
+    <div class="carouselText">
+        CHOOSE FROM<br/>
+        PLENTY MAP<br/>
+        STYLES EXACTLY<br/>
+        FOR YOUR<br/>
+        USE !
+
+    </div><div class="carouselImage">
+    <img style="max-width:100%;width: 100%" src="website/carousel/styles/styles.png">
+</div>
+</div>
+
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+        <feOffset dx="12" dy="12" result="offsetblur"/>
+        <feFlood flood-color="rgba(0,0,0,0.5)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
 </body>
 <script src="website/js/main.js"></script>
 </html>

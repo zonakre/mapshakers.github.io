@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="description" content="We are visualisating data on map.">
+    <meta name="keywords" content="map, design, GIS,data analytics, cartography,web development">
+    <meta name="author" content="Filip Zavadil">
+    <title>mapshakers | download center</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="style/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="style/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="style/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="style/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="style/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="style/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="style/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="style/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="style/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="style/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="style/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="style/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="style/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="style/favicon/manifest.json">
+    <link rel="shortcut icon" href="style/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="style/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="style/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="http://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet" type="text/css">
+    <link href='https://rawgit.com/mapshakers/mapkeyicons/master/dist/MapkeyIcons.css' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link href="style/mobile.css" rel="stylesheet" type="text/css">
+    <link href="style/card.css" rel="stylesheet" type="text/css">
+    <link href="style/download.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+
+    <script src="https://rawgit.com/filipzava/leaflet-mapkey-tiles/master/dist/L.TileLayer.Mapkey.min.js"></script>
+
+    <script src="js/lunr.min.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div id="header">
+        <div class="cc">
+            <div id="logoWrapper">
+                <a href="http://www.mapshakers.com"><img src="img/logo/mapshakers_header_logo.png"></a>
+            </div>
+            <div id="navWrapper">
+                <button id="menuButton"><span class="mki mki-bars"></span></button>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><span class="mki-intext mki-home"></span> home</a></li>
+                        <li><a href="../index.html#contact"><span class="mki-intext mki-post_office"></span> contact</a></li>
+                        <li><a><span class="mki-intext mki-data"></span> data</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="cc">
+        <div class="one-half" style="width: 50%;text-align:left">
+            <h1 style="font-variant: small-caps">mapshakers download centre</h1>
+            <p><strong>Vector</strong> and <strong>raster</strong> data are distributed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 license</a>, unless otherwise specified.</p>
+            <p><strong>GeoTiffs</strong> are rendered in <i>web mercator</i> projection - epsg:3857 and compressed by LZW algorithm. GeoTiffs or BigTiffs contains 512x512px tiles.  </p>
+            <p>Most of the maps are derived from awesome project OSM, do not forget to mention the source: mapshakers & OpenStreetMap & contributors!</p>
+        </div><div class="one-half" style="width: 50%">
+        <img width="100%" src="img/the_world_greyDark.png"/>
+    </div>
+
+        <div id="search"><span class="mki-intext mki-magnifier"></span> <input id="search_input" placeholder="search by keywords" type="text"/>  </div>
+        <div id="keyBtns"></div>
+    </div>
+        <div id="dataItems" style="text-align: center;">
+
+        </div>
+
+</section>
+
+<footer>
+    <div class="cc" style="text-align: center;padding-top:30px">
+        <div id="copyright"> &copy; mapshakers, 2015  All rights reserved, <img src="http://i.creativecommons.org/l/by/4.0/88x31.png"></div>
+    </div>
+</footer>
+
+</body>
+
+<script src="js/download.js"> </script>
+
+</html>

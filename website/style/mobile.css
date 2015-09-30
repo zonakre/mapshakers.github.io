@@ -1,0 +1,68 @@
+@media all and (max-width: 900px) {
+
+    #header{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    #navWrapper{
+      padding-right: 4px;
+        padding-top: 0px !important;
+
+    }
+
+    #navWrapper nav{
+        display: none;
+    }
+    #navWrapper #menuButton{
+        display: block;
+    }
+
+
+    .carouselText{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .carouselImage{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .one-third{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bigSymbol{
+        line-height: 60%;
+        padding-top: 20px;
+    }
+
+    .one-half{
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .one-half ul{
+        text-align: left;
+    }
+
+    #about,#contact,#consulting{
+        text-align: left!important;
+    }
+
+    #logoWrapper img{
+        max-width: 100%;
+        width: 250px;
+    }
+
+    footer #copyright {
+        text-align: center;
+    }
+}
