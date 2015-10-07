@@ -303,6 +303,15 @@ section#s5{
 section#s5:before {
     border-top-color: #91C2D6;
 }
+section#sPinterest {
+    color: #313131;
+    background-color: #e0e0e0;
+}
+
+section#sPinterest:before {
+    border-top-color: #50667F;
+}
+
 
 section#sLast{
     background-color: #313131;
@@ -311,7 +320,7 @@ section#sLast{
 }
 
 section#sLast:before{
-    border-top-color: #50667F;
+    border-top-color: #e0e0e0;
 }
 
 .anchorButton{
